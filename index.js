@@ -1,3 +1,3 @@
 function findMinAndRemoveSorted(arr) {
-  return arr[0]
+  return arr.shift()
 }
