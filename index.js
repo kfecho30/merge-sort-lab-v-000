@@ -14,6 +14,14 @@ function merge(arr1, arr2){
   return merged.concat(arr1).concat(arr2)
 }
 
-function mergeSort(arr1, arr2){
-  
+function mergeSort(arr){
+  let midpoint = arr.length/2
+  let firstArr = arr.slice(0, midpoint)
+  let secondArr = arr.slice(midpoint, arr.length)
+
+  if (arr.length < 2) {
+    return arr
+  } else {
+    merge(mergeSort(firstHalf), mergeSort(secondHalf))
+  }
 }
