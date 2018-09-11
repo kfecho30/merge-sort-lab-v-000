@@ -11,5 +11,5 @@ function merge(arr1, arr2){
       merged.push(arr1.shift())
     }
   }
-  merged.concat(arr1).concat(arr2)
+  return merged.concat(arr1).concat(arr2)
 }
