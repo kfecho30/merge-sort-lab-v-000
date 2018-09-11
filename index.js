@@ -22,6 +22,6 @@ function mergeSort(arr){
   if (arr.length < 2) {
     return arr
   } else {
-    merge(mergeSort(firstArr), mergeSort(secondArr))
+    return merge(mergeSort(firstArr), mergeSort(secondArr))
   }
 }
